@@ -1,1 +1,20 @@
-<h1>福井伝統工芸クイズ</h1>
+
+<script type="module">
+    import{bg,show}from"https://js.sabae.cc/egadv.js";
+    await bg(3475);
+    for(;;){
+        let a=await show("どの伝統工芸にする？",["越前和紙","越前漆器","越前打刃物","越前焼","越前箪笥","若狭塗","若狭めのう細工"])
+        if(a=="越前和紙"){
+            await show("越前和紙クイズ");
+            await show("次の中から正しいものを選ぼう!!");
+            await show("越前和紙の歴史は約何年前から続いているといわれている？",["①約1000年前","②約1500年前","③約2000年前"]);
+            if(b=="②約1500年前"){
+            await show("正解◎");
+                break;
+            }else{
+                await show("残念！不正解✖");
+            }
+        }
+    }
+    
+</script>
