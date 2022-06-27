@@ -1,0 +1,1 @@
+# traditionai-craft-idol
