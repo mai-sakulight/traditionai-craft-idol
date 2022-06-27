@@ -1,20 +1,33 @@
-
 <script type="module">
     import{bg,show}from"https://js.sabae.cc/egadv.js";
+    //await bg("https://fukuno.jig.jp/profile/fukuno-201803-2.jpg")
+    
     await bg(3475);
     for(;;){
         let a=await show("どの伝統工芸にする？",["越前和紙","越前漆器","越前打刃物","越前焼","越前箪笥","若狭塗","若狭めのう細工"])
         if(a=="越前和紙"){
             await show("越前和紙クイズ");
             await show("次の中から正しいものを選ぼう!!");
-            await show("越前和紙の歴史は約何年前から続いているといわれている？",["①約1000年前","②約1500年前","③約2000年前"]);
+            let b = await show("越前和紙の歴史は約何年前から続いているといわれている？",["①約1000年前","②約1500年前","③約2000年前"]);
             if(b=="②約1500年前"){
-            await show("正解◎");
+                await show("正解◎");
+                await show("越前和紙の始まりは、さかのぼること約1500年前と言われています。");
+                await show("越前市岡太（おかもと）地区を流れる川の上流に現れた女神（川上御前）が、村人に紙漉きの技術を教えたことが始まりといわれています。");
                 break;
             }else{
                 await show("残念！不正解✖");
             }
         }
+        if (a == "越前漆器") {
+            let b = await show("越前漆器は何製でできているでしょうか？",["①木製","②プラスチック製","③アルミ製"]);
+            if(b=="①木製"){
+                await show("正解◎");
+                break;
+            }else{
+                await show("残念！不正解✖");
+            }            
+        }
+        
     }
     
 </script>
